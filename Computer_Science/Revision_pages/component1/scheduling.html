@@ -1,0 +1,73 @@
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- In this line I import my style sheet!-->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!--Title is set-->
+    <title>Scheduling</title>
+</head>
+<body>
+<div class="containerforcontainers">
+	
+	 <div class="contents">
+	<h4>Scheduling</h4>
+	<ul class="contents_ul">
+	<li class="contents_li"><a href="#title">Start</a></li>
+		<li class="contents_li"><a href="#sub1">Purpose</a></li>
+    <li class="contents_li"><a href="#sub2">Round Robin</a></li>
+    <li class="contents_li"><a href="#sub3">First Come First Served</a></li>
+    <li class="contents_li"><a href="#sub4">Shortest Job First</a></li>
+    <li class="contents_li"><a href="#sub5">Shortest Time Remaining</a></li>
+    <li class="contents_li"><a href="#sub6">Multi-Level Feedback Queues</a></li>
+		
+	</ul>
+
+</div>
+
+<div class="positioning">
+
+ <div class="div_style">
+ <div class="wrapper">
+
+ <h1 class="title_class" id="title">Scheduling</h1>
+ <p class="strapline"><b><i>Used in multi-tasking operating systems to run multiple processes at once without hesitation.</i></b></p>
+ <img class="mainimg" src="assets/cpu-564771_640.jpg">
+
+ <h2 class="sub_title" id="sub1">Purpose</h2>
+ <div class="subcontent">
+ <p class="content">Scheduling is needed for the following reasons: to ensure that the computer processes as many tasks as possible in a given time, to maximise use of CPU time, to minimise the delay between when the user requests something to be done and when that task is completed, to make maximum use of resources such as input-output devices, to prioritise jobs, to ensure that no task is left uncompleted for too long, even if they are low priority and to alter priorities. There are many different types of scheduling algorithms.</p>
+
+    </div>
+   <h2 class="sub_title" id="sub2">Round Robin</h2>
+ <div class="subcontent">
+ <p class="content">Each process given fixed amount of time, if it is not finished when its time is up, it gets placed at the back of the queue to let the next process execute. Pros: It is very simple. Cons: Does not take account of priority and is inefficient as not all processes take the same amount of time.</p>
+
+    </div>
+    <h2 class="sub_title" id="sub3">First Come First Served</h2>
+ <div class="subcontent">
+ <p class="content">Processes executed on a first come first served basis like in a shop, even if a process takes long to complete and is of low priority. Pros: Easy to understand. Cons: Poor performance as average waiting times are high.</p>
+
+    </div>
+    <h2 class="sub_title" id="sub4">Shortest Job Next</h2>
+ <div class="subcontent">
+ <p class="content">Also known as shortest job first. Picks the job that will take the shortest time and run it until it finishes. Naturally this algorithms needs to know the time each job will take in advance. Pros: Best to minimise waiting time and easy to implement in batch systems where CPU time is known in advance. Cons: Impossible to implement where CPU time not known in advance as it is unrealistic to expect to know how long something will take in advance.</p>
+
+    </div>
+    <h2 class="sub_title" id="sub5">Shortest Remaining Time</h2>
+ <div class="subcontent">
+ <p class="content">The scheduler estimates how long each process will take. It then picks the one that will take the least amount of time and runs that. If a job is added with a shorter remaining time the scheduler is switched to that one. Each process is provided a fix time to execute, it is called a quantum.</p>
+
+    </div>
+     <h2 class="sub_title" id="sub6">Multi-Level Feedback Queues</h2>
+ <div class="subcontent">
+ <p class="content">Uses a number of queues, each of these queues have a different priority. The algorithm can move jobs between these queues depending on the jobs’ behaviour. They make use of other existing algorithms to group and schedule jobs with common characteristics. Multiple queues are maintained for processes with common characteristics. Each queues can have its own scheduling algorithms. Priorities are assigned to each queue. For example, CPU-bound jobs can be scheduled in one queue and all I/O-bound jobs in another queue. The process scheduler then alternately selects jobs from each queue and assigns them to the CPU based on the algorithm assigned to the queue.</p>
+
+    </div>
+  </div>
+  </div>
+  </div>
+  </div>
+</body>
+</html>

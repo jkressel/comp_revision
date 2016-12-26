@@ -1,0 +1,62 @@
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- In this line I import my style sheet!-->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!--Title is set-->
+    <title>Thinking Ahead</title>
+</head>
+<body>
+<div class="containerforcontainers">
+	
+	 <div class="contents">
+	<h4>Thinking ahead</h4>
+	<ul class="contents_ul">
+	<li class="contents_li"><a href="#title">Start</a></li>
+		<li class="contents_li"><a href="#sub1">Thinking ahead</a></li>
+		<li class="contents_li"><a href="#sub2">Cache</a></li>
+    <li class="contents_li"><a href="#sub3">Being modular</a></li>
+	</ul>
+
+</div>
+
+<div class="positioning">
+
+ <div class="div_style">
+ <div class="wrapper">
+
+ <h1 class="title_class" id="title">Thinking Ahead</h1>
+ <p class="strapline"><b><i>It is very important to think ahead in order to make code as simple, reliable and easily maintainable as possible</i></b></p>
+ <img class="mainimg" src="assets/technology-1283624_1280.jpg">
+
+ <h2 class="sub_title" id="sub1">Thinking ahead</h2>
+ <div class="subcontent">
+ <p class="content">Many problems require that one steps back in order to decide how best to implement a solution, even, how a solution may look. Things to consider are: Which pre-existing code could I use? How do I make my code as modular and consequently reusable as possible? What performance enhancements could be made? What will be input? What will be output? How can this system be systematically designed to avoid repetitions and issues?</p>
+ <p class="content">When considering IO, it is vital that one considers the data types which will be used, where IO should come from/go to, how input will be validated. Also, it important to consider how different components will interact and the types of data or primitives which they will need.</p>
+ <p class="content">To fully understand a problem, top-down design techniques may be used. For example, if making a game, one would start with the end result, the game and move down from there, for example to player, board handlers and AI. From there one could progress further down eg. the components of the board manager. When thinking ahead, it is also important to determine pre-conditions eg. if playing a game, the board must be loaded.</p>
+ 
+    </div>
+
+    <h2 class="sub_title" id="sub2">Thinking ahead with caching (A-Level)</h2>
+ <div class="subcontent">
+ <p class="content">Caching can improve the performance of software by allowing a requester, faster access to a subset of data. This is commonly used in the CPU, browsers and on the disk. If data is found in the cache, this is known as a cache hit, if not, it is known as a cache miss. If a cache miss occurs then this means that the data must be sought from the original source which is actually slower than if it had simply gone to the original source in the first place. In order to try and inprove the cache-hit ratio, various algorithms exist which will attempt to improve performance by either analysing what is frequently used and filling the cache accordingly or by removing the Least Recently Used. There are two main types of source updating techniques (ie. where the data originally comes from): write through and write back. Write through is simpler but slower, merely writing to both the cache and the source at the same time whereas write back will only write to the original data source when ejected from cache.</p>
+  <p class="content">Uses: disk caching can be used by the OS to preload frequently used files and software into RAM. Web caching can be used to save websites so that they can be loaded much faster later on. CPU caching can be used to improve system performance by minimising the time that the CPU spends idle.</p>
+   <p class="content">Although caching can potentially be much faster, reduce bandwidth required and provide a fallback data source, it can also be detremental to performance if the cache hit ratio is low, it can also make software much more complicated and error prone, and can provide old data if the cache has not been updated.</p>
+ 
+ 
+    </div>
+     <h2 class="sub_title" id="sub3">Reusable components</h2>
+ <div class="subcontent">
+ <p class="content">An important part of thinking ahead is designing components so that they can be used again eg. in a game, make a class which can handle all monsters rather than hardcoding each individually. It can also be used to identify where APIs can be used as it is rarely advisable to reinvent the wheel when someone else has already developed a tried and tested implementation - this also makes it easier to develop the software as the technical components have been abstracted. In fact, thinking abstractly ties in with thinking ahead because one needs to plan ahead in order to firstly design abstractions and make use of abstraction. Classes for example are a form of abstraction because once developed, they can be easily reused using a standard method, removing the need for the developer to re-code everything.</p>
+  
+ 
+ 
+    </div>
+  </div>
+  </div>
+  </div>
+  </div>
+</body>
+</html>

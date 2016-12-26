@@ -1,0 +1,54 @@
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- In this line I import my style sheet!-->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!--Title is set-->
+    <title>Architectures</title>
+</head>
+<body>
+<div class="containerforcontainers">
+	
+	 <div class="contents">
+	<h4>Architechtures</h4>
+	<ul class="contents_ul">
+	<li class="contents_li"><a href="#title">Start</a></li>
+		<li class="contents_li"><a href="#sub1">Von Neumann</a></li>
+		<li class="contents_li"><a href="#sub2">Harvard</a></li>
+    <li class="contents_li"><a href="#sub3">Modern CPUs</a></li>
+	</ul>
+
+</div>
+
+<div class="positioning">
+
+ <div class="div_style">
+ <div class="wrapper">
+
+ <h1 class="title_class" id="title">CPU architectures</h1>
+ <p class="strapline"><b><i>This article covers the 2 main types of CPU architectures; von Neumann and Harvard</i></b></p>
+ <img class="mainimg" src="assets/cpu-564771_640.jpg">
+
+ <h2 class="sub_title" id="sub1">Von Neumann</h2>
+ <div class="subcontent">
+ <p class="content">In the von Neumann architecture, the data and address buses are used for both instructions and data, which means that they must share common attributes, even though, for example, data tends to be larger. As a result, this gives rise to the 'von Neumann bottle neck'; there is a speed mismatch between the CPU, RAM and storage, meaning that the amount of time the CPU sits idle is greater. In the von Neumann architecture, there is no cache, only RAM. This means that the FDE cycle is slow. A pure von Neumann CPU can only read or write data, but not both at the same time.</p>
+ 
+    </div>
+    <h2 class="sub_title" id="sub2">Harvard</h2>
+ <div class="subcontent">
+ <p class="content">The Harvard architecture tries to overcome this basic problem, by using separate buses for data and instructions, meaning that data and instructions can be fetched separately. The Harvard architecture also uses Caches - very fast memory to help speed up the FDE cycle - this can result in far greater speeds, because if instructions or data are found in the Cache (cache hit) then it does not need to come from the very slow (comparatively) RAM. The Harvard architecture is able to read instructions and read or write data at the same time, because of the separate buses.</p>
+ 
+    </div>
+    <h2 class="sub_title" id="sub3">Modern CPUs</h2>
+ <div class="subcontent">
+ <p class="content">Modern CPUs have much in common with both architectures; although modern CPUs will still have the same basic components as in the von Neumann architecture, most modern CPUs also make use of various sizes and types of cache. If, however, a cache miss occurs, and an instruction or piece of data must be fetched from RAM, this is operating under the von Neumann architecture.</p>
+ 
+    </div>
+  </div>
+  </div>
+  </div>
+  </div>
+</body>
+</html>

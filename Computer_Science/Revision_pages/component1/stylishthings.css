@@ -1,0 +1,31 @@
+/* Set the background colour for the page*/
+body, html{
+  background-color: #fbfbfb;
+}
+/*The main container*/
+.container_class{
+	/*Set max width, margin etc.*/
+	max-width: 960px;
+	margin: auto;
+	padding: 20px;
+}
+/*Container inside the main container, which aligns all text in the center*/
+.sub_div{
+	
+}
+/*Put the title in the middle!*/
+.title_class{
+text-align: center;
+
+}
+/*The paragraphs need padding!*/
+p{
+	padding: 30px;
+}
+/*The list is here made to look ok*/
+ul{ 
+	text-align: center;
+list-style: none;
+padding: 0;
+
+ }

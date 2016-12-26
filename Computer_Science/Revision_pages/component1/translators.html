@@ -1,0 +1,66 @@
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- In this line I import my style sheet!-->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!--Title is set-->
+    <title>Translators</title>
+</head>
+<body>
+<div class="containerforcontainers">
+	
+	 <div class="contents">
+	<h4>Translators</h4>
+	<ul class="contents_ul">
+	<li class="contents_li"><a href="#title">Start</a></li>
+		<li class="contents_li"><a href="#sub1">Purpose</a></li>
+    <li class="contents_li"><a href="#sub2">Assemblers</a></li>
+        <li class="contents_li"><a href="#sub3">Compilers</a></li>
+            <li class="contents_li"><a href="#sub4">Interpreters</a></li>
+   
+		
+	</ul>
+
+</div>
+
+<div class="positioning">
+
+ <div class="div_style">
+ <div class="wrapper">
+
+ <h1 class="title_class" id="title">Translators</h1>
+ <p class="strapline"><b><i>Three main types - Interpreters, compilers and assemblers</i></b></p>
+ <img class="mainimg" src="assets/cpu-564771_640.jpg">
+
+ <h2 class="sub_title" id="sub1">Purpose</h2>
+ <div class="subcontent">
+ <p class="content">CPUs only understand machine code - binary sequences representing instructions and data. The sequences representing instructions are called opcodes. Programming in machine code is not very pleasant due to the fact that humans are better at working with languages, rather than binary number sequences. For this reason, manufacturers provide an assembly language. Assembly language is known as a low-level language. Each command in assembly language is called a ‘mnemonic’. A mnemonic usually has a direct equivalent in machine code, so an assembler is very close to the hardware detail within the CPU such as specific register names and memory management modes.</p>
+
+    </div>
+    <h2 class="sub_title" id="sub2">Assemblers</h2>
+ <div class="subcontent">
+ <p class="content">An assembler is a program that takes basic computer instructions and converts them into a pattern of bits that the computer’s processor can use to perform its basic operations. An assembler is a program that converts assembly language into object code. There is usually a one-to-one relationship between assembly and object code. This means that on the simplest level an assembler just needs to translate each line of code into its binary equivalent. In common with machine code, assembly code in not very portable because it will only run on the CPUs which support those commands.</p>
+
+    </div>
+       <h2 class="sub_title" id="sub3">Compiler</h2>
+ <div class="subcontent">
+ <p class="content">High level languages were developed in order to remove the agony of developing in low level languages. In high level languages eg. C++, C etc. a programmer writes a series of statements in order to create a program. This is known as source code. The purpose of a ‘compiler’ is to translate source code into machine code. A compiler is a program that takes a program written in a high-level language and converts it to object code. The code a compiler generates is stored as an ‘executable file’. Another name for this is ‘object file’. The compiler must also know the target CPU before it is able to translate. Object code can then be distributed and run as many times as required. Advantages of an executable: 1. An executable runs much faster than code which is interpreted line-by-line. 2. The original source code is no longer present and therefore, protects intellectual property. 3. Difficult to make unauthorised changes to an executable.</p>
+ <p class="content">Compilers also have many features designed to help programmers. Handling errors - will spot and point out errors. Although compilers can detect errors at source code level, often errors are reported which do not exist. These are known as spurious errors. This happens because the compiler has to make assumptions about the rest of the code after detecting an initial error. Because of the assumptions, one real error might cause a whole cascade of other spurious error messages to appear in the report. Code optimisation - There are many different ways of translating a set of high level statements into machine code. Good compilers will try to optimise code by making it run faster or use less memory. Makes source code independent - As the compiler translates, source code written once, can be compiled to work with many different CPUs, thus making it portable and independent of a specific CPU.</p>
+
+    </div>
+     <h2 class="sub_title" id="sub4">Interpreters</h2>
+ <div class="subcontent">
+ <p class="content">An interpreter translates and executes source code line by line. It will translate each line of source code into machine language and then execute that machine code directly eg. a BASIC interpreter command line. A second type of interpreter is one which compiles source code into an intermediate set of instructions known as byte codes. These are then executed by the interpreter. Examples include Flashplayer's action script or Java. Interpreters take each line of a high level program and converts it into machine code. This means that code can be run instantly and can aid in debugging as code will run until it reaches a bug, thus making the job of finding the problem easier. On the other hand, interpreted code is much slower than its compiled alternative. This is because each line must be interpreted before execution. In the case of loops, the same lines may need to be converted to machine code over and over again. Advantages: 1. Debugging is easier. 2. Uses less memory because only a few lines of code in memory at one time. 3. Less prone to crashes because interpreted code is usually run inside a virtual machine eg. JVM. Disadvantages: 1. Slower. Examples of interpreted languages include Python, BASIC and Java.</p>
+ <p class="content">Compilers: - Create fast, executable code to run on the CPU. - Debugging harder as spurious errors are frequent. - More likely to crash as runs on the CPU. - Easier to protect intellectual property. - Need more memory. - Harder to make unauthorised changes to compiled code.</p>
+ <p class="content">Interpreters: - Slower as code is interpreted one line at a time. - Debugging easier as code is checked before execution. - Less likely to crash as the instructions are being carried out either on the interpreters' command line or within a virtual machine environment which is protecting the computer from being directly accessed by the code. - Source code easier to obtain. - Uses less memory as code must only be present one line at a time. - Easier to modify.</p>
+
+    </div>
+   
+  </div>
+  </div>
+  </div>
+  </div>
+</body>
+</html>

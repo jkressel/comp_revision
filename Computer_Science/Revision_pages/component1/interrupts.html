@@ -1,0 +1,69 @@
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- In this line I import my style sheet!-->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!--Title is set-->
+    <title>Interrupts</title>
+</head>
+<body>
+<div class="containerforcontainers">
+	
+	 <div class="contents">
+	<h4>Interrupts</h4>
+	<ul class="contents_ul">
+	<li class="contents_li"><a href="#title">Start</a></li>
+		<li class="contents_li"><a href="#sub1">What?</a></li>
+    <li class="contents_li"><a href="#sub2">What happens?</a></li>
+    <li class="contents_li"><a href="#sub3">ISRs</a></li>
+    <li class="contents_li"><a href="#sub4">Potential problems</a></li>
+    
+		
+	</ul>
+
+</div>
+
+<div class="positioning">
+
+ <div class="div_style">
+ <div class="wrapper">
+
+ <h1 class="title_class" id="title">Interrupts</h1>
+ <p class="strapline"><b><i>Deal with the stuff that needs the CPU's attention!</i></b></p>
+ <img class="mainimg" src="assets/cpu-564771_640.jpg">
+
+ <h2 class="sub_title" id="sub1">What are interrupts?</h2>
+ <div class="subcontent">
+ <p class="content">The CPU's job is to process data and instructions, and without it, not much would happen, however, there are times when a higher priority task comes along and needs instant attention in order for the computer system to function correctly. Such events include IO devices eg. Keyboard; would you want to wait for that file to finish downloading in order for your key press to have any effect? This may be achieved through polling(checking if anything more urgent needs to be done, which is very wasteful) or through interrupts.</p>
+
+    </div>
+    <h2 class="sub_title" id="sub2">What happens in the CPU?</h2>
+ <div class="subcontent">
+ <p class="content">When an interrupt occurs, all the register values are copied to a special data structure or memory area called the 'stack' which is in primary memory. They stay in the stack whilst the CPU starts executing the interrupt service routine (ISR). Once the routine is over, the registers are loaded back with their original values from the stack and can continue with what they were doing before the interrupt occured. The switching from a task to the ISR and back is known as context switching.</p>
+
+    </div>
+    <h2 class="sub_title" id="sub3">Interrupt Service Routines</h2>
+ <div class="subcontent">
+ <p class="content">Each interrupt has a corresponding ‘interrupt service routine’ (ISR). The interrupt service routine is a set of instructions that have to be carried out when the event occurs. When a peripheral or software routine requires attention an interrupt is raised to tell the CPU. Each interrupt has a priority level. If the priority of an interrupt is higher than that of the current task, the interrupt is attended to instead.</p>
+ <p class="content">Priorities of interrupts (listed from high to low):</p>
+  <p class="content"><b>Hardware commands</b> - Eg. Reset button pressed, Power supply failure, Power-down command (screen off, hibernate, etc). These send a physical signal to the CPU via the interrupt chip.</p>
+  <p class="content"><b>Program/Software</b> - Software has detected an error has occurred and will issue a software interrupt for the CPU to run some instructions to clear the error.</p>
+    <p class="content"><b>Timer</b> - Some programs trigger a ‘timer interrupt’, e.g. data-logging application that has to read an input sensor every 1 second.</p>
+    <p class="content"><b>IO devices</b> - Devices such as the keyboard and mouse demand attention. Otherwise, your mouse and keyboard inputs would never get a look-in. Other input-output devices include: hard disk, optical disk, printer and graphics tablet.</p>
+    <p class="content">At the end of each FDE cycle, the processor checks to see if there are any interrupts. If there are and they are of a higher priority than the current task the following steps are carried out: 1. The contents of the program counter and the other registers are copied to an area of memory called a stack. 2. The relevant interrupt service routine can then be loaded by changing the program counter to the value of where the ISR starts in memory. 3. When the interrupt service routine is complete, the previous values of the programs counter and other registers can be restored from memory to the CPU.</p>
+
+    </div>
+     <h2 class="sub_title" id="sub4">Potential problems</h2>
+ <div class="subcontent">
+ <p class="content">1. Being able to respond quickly enough where there are lots of interrupts (latency). 2. Too many interrupts (stack overflow). What happens when the stack is full because so many interrupts are waiting their turn to run? The answer is a 'stack overflow' that usually crashes the computer.</p>
+
+    </div>
+ 
+  </div>
+  </div>
+  </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- In this line I import my style sheet!-->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!--Title is set-->
+    <title>IO and Storage</title>
+</head>
+<body>
+<div class="containerforcontainers">
+	
+	 <div class="contents">
+	<h4>IO and Storage</h4>
+	<ul class="contents_ul">
+	<li class="contents_li"><a href="#title">Start</a></li>
+		<li class="contents_li"><a href="#sub1">RAM and ROM</a></li>
+		<li class="contents_li"><a href="#sub2">Scanners</a></li>
+		<li class="contents_li"><a href="#sub3">Sensors and actuators</a></li>
+	</ul>
+
+</div>
+
+<div class="positioning">
+
+ <div class="div_style">
+ <div class="wrapper">
+
+ <h1 class="title_class" id="title">IO and Storage</h1>
+ <p class="strapline"><b><i>The ways in which one can interact with a computer system and ways in which the computer system stores data.</i></b></p>
+ <img class="mainimg" src="assets/cpu-564771_640.jpg">
+
+ <h2 class="sub_title" id="sub1">RAM and ROM</h2>
+ <div class="subcontent">
+ <p class="content">RAM is where programs and data are loaded in order to make them accessible to the CPU faster than if they had to be loaded from a secondary storage device eg. HDD. RAM is volatile, meaning that when power is removed, all data is lost. RAM is split into blocks (words); each has a address. For example, a 1GB memory chip contains about 270 million memory addresses. ROM is a read only part of memory from which critical components are loaded eg. Kernel. ROM, however, is not suitable for normal apps because it is read only and therefore cannot store data. This is normally on a secondary storage device.</p>
+ 
+    </div>
+    <h2 class="sub_title"><b>Input</b></h2>
+    <h2 class="sub_title" id="sub2">Scanners</h2>
+ <div class="subcontent">
+ <p class="content">Scanners will digitise photos, text and more. They do this by passing a sensor along the length of the item to be scanned. The reflected information is then turned into the binary representation with which the computer can work. For example, an image is turned into many dots known as pixels.</p>
+ <p class="content"><b>Optical Character Recognition (OCR)</b> - Allows printed text to be turned into a digitally editable text. This is a post processing step performed after the document has been scanned. The binary data which has been scanned is then compared to a database of recognised shapes eg. Letters. Once a binary pattern has been recognised, it is turned into that character.</p>
+ <p class="content"><b>Optical Mark Recognition (OMR)</b> - Commonly used for things like the lottery, so that a computer can automate the process of seeing which boxes have been marked. The scanner compares where the detected marks are, with the predefined form so that it knows which options were selected. Some downsides include the fact that the scanner may miss marks which are not clear, and if 2 boxes were marked in error, then it may be that only the first is used.</p>
+ <p class="content"><b>Barcodes</b> - Store data which can be scanned and checked against a database, this is commonly used in shops or warehouses to efficiently update databases for example to say what has been delivered, stock levels, prices, when something was bought to remove it from the database etc. A barcode scanner reads the different thickness lines and these tell it exactly what is stored there. A laser is passed along the barcode and the data stored (in the lines) is reflected to the scanner.</p>
+ <p class="content"><b>Magnetic Ink Recognition (MICR)</b> - Commonly used in cheques. A special ink is used containing iron oxide and special fonts are used so that regardless of what is written over it, the reader can still read it. This is however, expensive and so only suitable for things like cheques.</p>
+ 
+    </div>
+     <h2 class="sub_title" id="sub3">Sensors and actuators</h2>
+ <div class="subcontent">
+ <p class="content">Common sensors include: accelerometer, pressure, luminance, temperature, IR etc. Data recorded by a sensor must be converted from an analogue to digital signal using an ADC (analogue to digital converter). When this data is processed, it produces some sort of output, which may be on a virtual display, or as a physical action eg. making an alarm sound. If physical motion is required, an actuator is used which are found in things like automatic doors, conveyer belts etc. Sensors and actuators form a 'feedback loop' - Information is detected by a sensor -> Data processed, decisions made -> Actuator triggered causing physical change -> Physical system changes, sensor must track those changes and it starts all over again.</p>
+ 
+    </div>
+     <h2 class="sub_title" id="sub4">Touch screens</h2>
+ <div class="subcontent">
+ <p class="content">Not a type of output - important! Touch screens are found on many devices, from handheld smart devices all the way to supermarket checkout selections. There are 2 different types of touch screens - resistive and capacitive. Resistive screens detect touch because two layers which touch when pressure is applied, a voltage is recorded and the device knows where the touch has occured; they are less accurate than capacitive screens and generally cannot display such high quality images. Capacitive work by detecting the change in the electrical field where the user touched, they are more expensive and accurate than resistive touch screens and also allow for the detection of multiple touch points (multi-touch).</p>
+ 
+    </div>
+     <h2 class="sub_title" id="sub5">Output</h2>
+ <div class="subcontent">
+ <p class="content">Screens (not the touch part), motors, actuators, speakers, lights and other such devices which cause a physical change are classed as output.</p>
+ 
+    </div>
+     <h2 class="sub_title" id="sub6"><b>Storage</b></h2>
+ <div class="subcontent">
+ <p class="content">Many different types incorporating diffenent technologies exist. From HDDs, SSDs to CDs and Flash Drives.</p>
+ <p class="content"><b>Magnetic storage devices</b> - Most common examples are HDDs, provide good compromise between performance, cost and capacity. Data is read and saved using an arm that has a special read head at the end. As the disc spins, the arm travels across the disc. Each sector of the platter can store data and the movement of both the disc and the read head means that every sector on the hard drive can be reached. In order to read or write data, a small magnetic flux is introduced on the disc. The oxide on the hard drive platter remembers this flux. Data is then encoded using standard binary techniques, with the flux able to store either a 1 or a 0. Magnetic storage is non-volatile. The faster a HDD spins, the more data can be read, a common speed is 7200 RPM. However, HDDs may be prone to faliure because of the high speed and stresses of the moving components. HDDs must be maintained by the OS to manage the bad sectors which will occur over time.</p>
+ <p class="content"><b>Flash Memory</b> - Uses type of RAM known as EEPROM or electronically erasable programmable read-only memory which can maintain its state once power has been removed. Performance over HDDs is increased due to lack of moving components. Found in SSDs, Secure Digital (SD) cards and flash drives. Tend to have lower capacity than magnetic equivalents.</p>
+ <p class="content"><b>Optical Drives</b> - Use lasers to burn data with microscopic indentations (starting in centre) and working way out. Indentations and their absence create pits and lands, which are used to store binary data. A laser is aimed at the disc and reflected back, which can cause interference with the original laser. This change in interference is how the optical device can tell the difference between a pit and a land. DVD-ROM uses the same techniques to store data, but the data is stored on two layers. Two lasers of differing wavelength are used to read data from the two layers. Pits and lands are stored closer together, meaning that the laser’s wavelength must be shorter. Blu-rays have higher capacities by allowing very short wave lengths and consequently denser data. Commonly used for media etc. DVD-R and CD-R cannot be modified once burned. CDs and DVDs which can be re-written exist.</p>
+ <p class="content"><b>Redundant Array of Independent Disks (RAID)</b> - Can bring SSDs or HDDs together to act as a single drive, which is a useful layer of abstraction commonly used in NAS systems. RAID modes: <b>RAID 0 Striped</b>: this provides improved performance and additional storage. However, it does not provide any fault tolerance, so any errors on the discs could destroy the RAID. <b>RAID 1 Mirrored</b>: each disc provides the same information, which provides some fault tolerance. As data is repeated, read time is increased, but write speed is decreased. <b>RAID 3–4 Striped parity</b>: this requires three discs in the array. As well as fault tolerance it provides parity checks and error correction. The parity information is stored on a single drive, so the other drives can continue working when one of the drives fails. The lost data can be calculated using the parity data stored on the parity drive.</p>
+ <p class="content"><b>Storage Area Networks (SANs)</b> - Gateway to a series of block devices eg RAIDs. Treats each device as block-level device but can also be configured to treat all as one logical drive.</p>
+ <p class="content"><b>Virtual Storage</b> - Allows SANs and RAIDs to work together. Virtual Storage is an abstraction, allowing all operations of the user to be carried out from one central server and not have to worry about the differing tech in each section. Eg. cloud storage.</p>
+  
+    </div>
+  </div>
+  </div>
+  </div>
+  </div>
+</body>
+</html>

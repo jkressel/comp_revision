@@ -1,0 +1,53 @@
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- In this line I import my style sheet!-->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!--Title is set-->
+    <title>Virtual Machines</title>
+</head>
+<body>
+<div class="containerforcontainers">
+	
+	 <div class="contents">
+	<h4>Virtual Machines</h4>
+	<ul class="contents_ul">
+	<li class="contents_li"><a href="#title">Start</a></li>
+		<li class="contents_li"><a href="#sub1">Purpose</a></li>
+    <li class="contents_li"><a href="#sub2">Interpreting</a></li>
+   
+		
+	</ul>
+
+</div>
+
+<div class="positioning">
+
+ <div class="div_style">
+ <div class="wrapper">
+
+ <h1 class="title_class" id="title">Virtual Machines</h1>
+ <p class="strapline"><b><i>A virtual machine can make old software live again!</i></b></p>
+ <img class="mainimg" src="assets/cpu-564771_640.jpg">
+
+ <h2 class="sub_title" id="sub1">Purpose</h2>
+ <div class="subcontent">
+ <p class="content">A virtual machine is a piece of software which can emulate the structure and function of a physical computer. Common uses include running different operating systems on a computer. Virtualisation can also be used to run software on hardware for which it was never intended, but cannot allow software to run on physical specs which are not great enough to support it ie. an operating system requiring 500MB of RAM cannot run in a virtual machine running on hardware which only has 1MB of RAM.</p>
+ <p class="content">Advantages: Run older applications that are not compatible with newer operating systems, run multiple operating systems on the same computer, easy to copy and backup, shielding from malware, web hosting companies can create and sell many ‘virtual servers’ within a single physical server.</p>
+<p class="content">Disadvantages: Programs will run less efficiently than they would on the original hardware. Still need proper licenses to run the operating system and applications within a virtual machine, they are as applicable to copyright law as any other, so they cannot just be copied. Cannot create a virtual machine that requires more hardware resources than your real computer actually has.</p>
+    </div>
+    <h2 class="sub_title" id="sub2">Interpreting</h2>
+ <div class="subcontent">
+ <p class="content">There are multiple types of interpreters. The first type will translate each line of source code into machine language and then execute that machine code directly. However, for this, the source code must be freely available and it is slow. A second type of interpreter is one that compiles source code into an intermediate level set of instructions. The intermediate instructions are then executed by the interpreter. These intermediate codes are called ‘bytecodes’. For example, The Adobe Flash player is a 'virtual machine' sitting within your web browser. It plays flash movies and has its own programming language called 'actionscript'. For instance YouTube movies are mostly in Flash format. We have coded our games / quizzes using actionscript. If you can view flash files in your browser at the moment, then you have the flash player installed which is interpreting bytecode commands and translating them on-the-fly into real machine code that your CPU actually runs. Java has a simiar approach where source code is compiled into bytecode that is then interpreted in a 'Java Virtual Machine' (JVM). Byte code is not machine code, so cannot be run on the CPU, instead it must be interpreted by a virtual machine, which means that any device running this virtual machine can also run the byte code. This is why Java is so popular.</p>
+ <p class="content">Advantages: Portable. The same code can run on any hardware platform that supports the virtual machine. No need to change the source code.</p>
+<p class="content">Disadvantages: Security. The current version of the Virtual Machine may have security vulnerabilities that allow rogue code to take control of the host computer. The code which is interpreted by the virtual machine will always suffer a performance deficite compared to compiled code.</p>
+    </div>
+   
+  </div>
+  </div>
+  </div>
+  </div>
+</body>
+</html>

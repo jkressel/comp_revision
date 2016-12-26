@@ -1,0 +1,98 @@
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- In this line I import my style sheet!-->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!--Title is set-->
+    <title>Introduction to Programming</title>
+</head>
+<body>
+<div class="containerforcontainers">
+	
+	 <div class="contents">
+	<h4>Programming Intro</h4>
+	<ul class="contents_ul">
+	<li class="contents_li"><a href="#title">Start</a></li>
+		<li class="contents_li"><a href="#sub1">Procedural languages</a></li>
+    <li class="contents_li"><a href="#sub2">Program flow</a></li>
+    <li class="contents_li"><a href="#sub3">Variables and Constants</a></li>
+    <li class="contents_li"><a href="#sub4">Procedures</a></li>
+    <li class="contents_li"><a href="#sub5">Operators</a></li>
+    <li class="contents_li"><a href="#sub6">Strings</a></li>
+    <li class="contents_li"><a href="#sub7">File handling</a></li>
+		
+	</ul>
+
+</div>
+
+<div class="positioning">
+
+ <div class="div_style">
+ <div class="wrapper">
+
+ <h1 class="title_class" id="title">Introduction to Programming</h1>
+ <p class="strapline"><b><i>Tell the computer what to do!</i></b></p>
+ <img class="mainimg" src="assets/cpu-564771_640.jpg">
+
+ <h2 class="sub_title" id="sub1">Procedural languages</h2>
+ <div class="subcontent">
+ <p class="content">A procedural language is one where instructions (in the form of source code) are carried out one at a time ie. procedural languages are sequential. Procedural languages are imperative.</p>
+
+    </div>
+   <h2 class="sub_title" id="sub2">Program flow</h2>
+ <div class="subcontent">
+ <p class="content">The path followed by a program is known as program flow. Programs will generally start at the first instruction and end at the last ie. sequential. Even with interrupts and loops, a program will always have a beginning and an end. Program flow may be illustrated in a flow diagram.</p>
+
+    </div>
+    <h2 class="sub_title" id="sub3">Variables and Constants</h2>
+ <div class="subcontent">
+ <p class="content">A variable is used to store values in memory which can change as the program runs. A variable is given a name or ('identifier') which is used to refer to it. A constant is a value which cannot be modified as the program runs eg. PI.</p>
+
+    </div>
+    <h2 class="sub_title" id="sub4">Procedures</h2>
+ <div class="subcontent">
+ <p class="content">A procedure is a section of computer code that performs a specific task. There are two main types: Subroutines and functions. A subroutine is a procedure that can take zero or more values as input (parameters), act upon that data, then return zero, one or more values. A subroutine is always 'called'. Calling a subroutine means the calling procedure sets up the CPU to carry out the instructions within the subroutine. A function is similar to a subroutine but it only ever returns one value.</p>
+
+    </div>
+    <h2 class="sub_title" id="sub5">Operators</h2>
+ <div class="subcontent">
+ <p class="content"><b>Arithmetic</b></p>
+ <p class="content">+ Addition</p>
+ <p class="content">- Subtraction</p>
+ <p class="content">* Multiplication</p>
+ <p class="content">/ Real Division</p>
+ <p class="content">DIV Quotient - Like division, but it only returns the whole number or integer.</p>
+ <p class="content">MOD Modulus</p>
+ <p class="content">^ Exponentiation</p>
+ <p class="content"><b>Relational</b></p>
+ <p class="content">== Equal to</p>
+ <p class="content">!= Not equal to</p>
+ <p class="content">> Greater Than</p>
+ <p class="content">< Less Than</p>
+ <p class="content">>= Greater than or equal to</p>
+ <p class="content"><= Less than or equal to</p>
+ <p class="content"><b>Boolean</b></p>
+  <p class="content">AND Both must be true to return true</p>
+   <p class="content">OR At least one must be true in order to evaluate as true</p>
+    <p class="content">NOT Returns the opposite of the value in question eg. A = TRUE NOT(A)= FALSE</p>
+
+
+    </div>
+     <h2 class="sub_title" id="sub6">Strings</h2>
+ <div class="subcontent">
+ <p class="content">Strings start at 0 eg. "HI", at position 0 is "H". Represented by "" in most languages. Strings represent text in a program. Strings can be concatenated by 'adding' two strings together. Strings also have a length which can be useful to dynamically operate on the string. Len(string_name) will return the length of the string. Strings can also be converted to upper and lower case by using .upper() or .lower(). Parts of a string can be replaced using .replace("stufftoreplace", "replaceitwith"). Strings can also be sliced in order to use only the parts required using string_name[start:end]. If no start is specified, then the string will be sliced until the end specified. If no end is specified, the string from the start point all the way to the end will be returned.</p>
+
+    </div>
+      <h2 class="sub_title" id="sub7">File handling</h2>
+ <div class="subcontent">
+ <p class="content">Files are used to store values which one may want to retain eg. scores. f = open(“highscores.txt”,”r”) would allow one to open a file in read only mode. w = write, r = read, a = append etc. lines = f.readlines() reads all of the lines of a file into an array which one can then access. When one has finished with a file, it is important close the input stream eg. f.close(). To write to a file: f.write(“\nJames, 9720”) would be one way; note - it must be opened in a mode which permits writing!</p>
+
+    </div>
+  </div>
+  </div>
+  </div>
+  </div>
+</body>
+</html>

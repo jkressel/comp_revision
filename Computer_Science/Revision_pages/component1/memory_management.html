@@ -1,0 +1,66 @@
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- In this line I import my style sheet!-->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!--Title is set-->
+    <title>Memory management</title>
+</head>
+<body>
+<div class="containerforcontainers">
+	
+	 <div class="contents">
+	<h4>Memory management</h4>
+	<ul class="contents_ul">
+	<li class="contents_li"><a href="#title">Start</a></li>
+		<li class="contents_li"><a href="#sub1">Memory management</a></li>
+		<li class="contents_li"><a href="#sub2">Virtual memory</a></li>
+    <li class="contents_li"><a href="#sub3">Disk partitioning</a></li>
+    <li class="contents_li"><a href="#sub4">Segmentation</a></li>
+    <li class="contents_li"><a href="#sub5">Paging</a></li>
+	</ul>
+
+</div>
+
+<div class="positioning">
+
+ <div class="div_style">
+ <div class="wrapper">
+
+ <h1 class="title_class" id="title">Memory management</h1>
+ <p class="strapline"><b><i>Process of controlling and coordinating memory and assigning blocks to programs. This is one of the main jobs of an OS.</i></b></p>
+ <img class="mainimg" src="assets/cpu-564771_640.jpg">
+
+ <h2 class="sub_title" id="sub1">Memory management</h2>
+ <div class="subcontent">
+ <p class="content">Function for managing primary memory, keeping track of each memory location, if it is allocated or free, decides which process gets memory and how much and which memory locations to assign.</p>
+
+    </div>
+    <h2 class="sub_title" id="sub2">Virtual memory</h2>
+ <div class="subcontent">
+ <p class="content">Primary memory is limited in size, however, virtual memory can be used to trick a computer into thinking it has more memory; virtual memory maps virtual addresses used by programs into physical addresses in memory. Virtual memory makes use of secondary memory eg. HDD as an extension of memory, in order to store blocks which are not currently used, without terminating a program, as they can be loaded back into RAM at a later stage. This is much slower than keeping everything in RAM as it must be moved back and forth and if RAM is very full, blocks may be moved back and forth frequently, slowing the system down. This is known as Disk Thrashing. Virtual memory is making use of secondary memory (backing store) as if it were main memory. Virtual memory acts as an extended form of primary memory.</p>
+
+    </div>
+      <h2 class="sub_title" id="sub3">Disk partitioning</h2>
+ <div class="subcontent">
+ <p class="content">Partitioning a disk is the act of creating logically separate (ie. even though it is the same hardware, the OS will treat it as though the partitions are separate) partitions eg. C drive, home folder.</p>
+
+    </div>
+      <h2 class="sub_title" id="sub4">Segmentation</h2>
+ <div class="subcontent">
+ <p class="content">All applications need to be loaded into main memory before they can be executed. In order to do so, a temporary 'segment' is created by the memory manager. Every loaded application will have some instructions or program code for the CPU to execute. The loaded application will need a data area to hold its variables. It will also need a special area called 'the stack' to handle sub-routines and interrupts. It will also need some free memory within the segment to allow the stack to grow and shrink. There can be many segments in memory at the same time. Each one is a separate process or application and each may be a different size.</p>
+
+    </div>
+      <h2 class="sub_title" id="sub5">Paging</h2>
+ <div class="subcontent">
+ <p class="content">The memory manager divides primary memory into sections of equal size – called pages. The pages are efficiently set to be the same size as the sectors on the hard disk. Unlike segmentation, programs and data are split into equal size blocks (pages). Paging is where relatively inactive pages are temporarily removed from physical memory and placed into virtual memory. Paging happens when main memory is getting a bit full. The memory manager will look at the pages in main memory and identify those which haven’t been used for a while. They will be moved into virtual memory. When an application needs data held on a page in virtual memory it will be swapped back into main memory and another inactive page may take its place. In order to manage these pages a ‘page table’ is created by the memory manager which stores the starting address of each page. The starting address is where the first byte of each page is physically located in memory. Processes may be held in non-continuous pages ie. in completely different parts of memory.</p>
+
+    </div>
+  </div>
+  </div>
+  </div>
+  </div>
+</body>
+</html>

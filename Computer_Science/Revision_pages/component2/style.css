@@ -1,0 +1,87 @@
+/* Set the background colour for the page.*/
+body, html{
+  background-color: #fbfbfb;
+}
+.div_style{
+	text-align: center;
+	margin: auto;
+	padding: 5px 20px;
+}
+/*wrap main body*/
+.positioning{
+margin: auto;
+}
+/*wrap text and content*/
+.wrapper{
+	width: 60%;
+	margin: auto;
+}
+/*main container for all the things*/
+.containerforcontainers{
+	width: 100%;
+}
+/*main image*/
+.mainimg{
+	max-width: 700px;
+	width: 100%;
+}
+/*contents list*/
+.contents_ul{
+	list-style: none;
+	padding: 0px;
+}
+/*contents list contents*/
+.contents_li{
+
+}
+/*Subtitle class for all of the various headings*/
+.sub_title{
+	text-align: left;
+	padding: 10px 30px 0 30px;
+}
+/*content of the article*/
+.content{
+	text-align: left;
+	padding: 5px 30px;
+	letter-spacing: 1px;
+
+}
+.smallimg{
+	max-width: 60%;
+	width: 300px;
+
+}
+/*body for the contents section*/
+.contents{
+	text-align: center;
+}
+/*for when the screen gets big*/
+@media (min-width: 960px){
+	.positioning{
+		width: 85%;
+		float: right;
+	}
+	.div_style{
+	/*Align the text in the middle, add a margin and create a shadow which makes the div look a bit like a card*/
+	text-align: center;
+   margin: auto;
+   padding: 5px 20px; 
+    
+    
+     
+}
+.contents{
+	text-align: center;
+	width: 15%;
+	margin: 20px;
+	padding: 20px;
+	float: left;
+	position: fixed;
+
+}
+.wrapper{
+	width: 60%;
+	margin: auto;
+}
+
+}

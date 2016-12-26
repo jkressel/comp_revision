@@ -1,0 +1,51 @@
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- In this line I import my style sheet!-->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!--Title is set-->
+    <title>Types of MultiCore CPU</title>
+</head>
+<body>
+<div class="containerforcontainers">
+	
+	 <div class="contents">
+	<h4>Multicores</h4>
+	<ul class="contents_ul">
+	<li class="contents_li"><a href="#title">Start</a></li>
+		<li class="contents_li"><a href="#sub1">Parallel</a></li>
+		<li class="contents_li"><a href="#sub2">Co-processors</a></li>
+	</ul>
+
+</div>
+
+<div class="positioning">
+
+ <div class="div_style">
+ <div class="wrapper">
+
+ <h1 class="title_class" id="title">Types of multicore CPU</h1>
+ <p class="strapline"><b><i></i></b></p>
+ <img class="mainimg" src="assets/cpu-564771_640.jpg">
+
+ <h2 class="sub_title" id="sub1">Parallel systems</h2>
+ <div class="subcontent">
+ <p class="content">At some point it is no longer possible to fit more and more transistors on a chip. For this reason, parallel cores offer a solution. By having multiple cores next to each other and talking to each other means that tasks can be broken down into smaller sub-tasks or threads which the various cores can work on at the same time.</p>
+ <p class="content">Main types of parallel systems - <b>MISD</b> - multiple instruction sets working on the same set of data. <b>SIMD</b> - a single instruction set working on multiple sets of data, eg real time image processing etc. <b>MIMD</b> - Multiple instruction sets working on multiple sets of data. Instructions can be processed independently of other processors. The most common type.</p>
+ <p class="content">Different processors in a parallel system all work and load instructions as a single core CPU would, the difference being that they can coordinate with each other. Parallel systems are far more complicated to write software for and if not done properly, may not have any performance advantage as was often the case in the early days.</p>
+
+    </div>
+    <h2 class="sub_title" id="sub2">Co-processors</h2>
+ <div class="subcontent">
+ <p class="content">Also work off the principle of adding extra processors but here, instead of having cores which can do everything, cores which are good at specific tasks. Common examples include Floating point units, built in to the CPU to handle more complex FP arithmetic, Digital Signal Processors, commonly used in sound systems and GPUs. GPUs have many uses besides processing the complex calculations needed for graphics. GPUs are used in medical modelling, economic modelling and even password cracking.</p>
+ 
+
+    </div>
+  </div>
+  </div>
+  </div>
+  </div>
+</body>
+</html>

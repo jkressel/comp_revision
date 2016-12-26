@@ -1,0 +1,54 @@
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- In this line I import my style sheet!-->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!--Title is set-->
+    <title>Fetch, Decode, Execute</title>
+</head>
+<body>
+<div class="containerforcontainers">
+	
+	 <div class="contents">
+	<h4>FDE</h4>
+	<ul class="contents_ul">
+	<li class="contents_li"><a href="#title">Start</a></li>
+		<li class="contents_li"><a href="#sub1">Fetch</a></li>
+		<li class="contents_li"><a href="#sub2">Decode</a></li>
+    <li class="contents_li"><a href="#sub3">Execute</a></li>
+	</ul>
+
+</div>
+
+<div class="positioning">
+
+ <div class="div_style">
+ <div class="wrapper">
+
+ <h1 class="title_class" id="title">The FDE Cycle</h1>
+ <p class="strapline"><b><i>Happens no matter what you do</i></b></p>
+ <img class="mainimg" src="assets/cpu-564771_640.jpg">
+
+ <h2 class="sub_title" id="sub1">Fetch</h2>
+ <div class="subcontent">
+ <p class="content">1. The Program Counter copies the address of the next instruction it contains into the Memory Address Register (MAR). 2. The Memory Address Register places the address to be used on to the ‘Address Bus’. 3. The Memory Address Register triggers a ‘read’ signal that causes the main memory (RAM) to place the instruction being asked for on to the ‘Data Bus’. 4. The instruction on the data bus is loaded into the Memory Data Register (also called Memory Buffer Register). 5. The Memory Data register copies the instruction into the ‘Instruction Register’.</p>
+ 
+    </div>
+     <h2 class="sub_title" id="sub2">Decode</h2>
+ <div class="subcontent">
+ <p class="content">The CPU examines the instruction in the current instruction register (CIR) and ‘decodes’ it. This means a special part of the CPU called the ‘decode’ unit will make the rest of the CPU ready to carry out the instruction. It does this by issuing a series of ‘micro-instructions’. Every CPU has an instruction set that defines what the decoder understands as legitimate commands. All software eventually ends up as a set of commands from within the instruction set.</p>
+ 
+    </div>
+       <h2 class="sub_title" id="sub3">Execute</h2>
+ <div class="subcontent">
+ <p class="content">1. The address part of the instruction is placed in the MAR. 2. The instruction is decoded and executed. 3. The processor checks for interrupts (signals from devices or other sources seeking the attention of the processor) and either branches to the relevant interrupt service or starts the cycle again. 4. During the execute stage the instruction within the instruction register is carried out (executed) by the CPU. The part that executes instructions is called the ‘execute unit’. 5. Now that the CPU is executing an instruction the program counter can now be reset to point to the next instruction.</p>
+ 
+    </div>
+  </div>
+  </div>
+  </div>
+  </div>
+</body>
+</html>

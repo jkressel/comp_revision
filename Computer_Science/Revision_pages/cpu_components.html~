@@ -1,0 +1,90 @@
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- In this line I import my style sheet!-->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript"  src="hidden.js"></script>
+    <!--Title is set-->
+    <title>The CPU</title>
+</head>
+<body>
+<div class="containerforcontainers">
+	
+	 <div class="contents">
+	<h4>The CPU</h4>
+	<ul class="contents_ul">
+	<li class="contents_li"><a href="#title">Introduction</a></li>
+		<li class="contents_li"><a href="#sub1">Purpose</a></li>
+		<li class="contents_li"><a href="#sub2">Components</a></li>
+    <li class="contents_li"><a href="#sub3">Architecture</a></li>
+	</ul>
+
+</div>
+
+<div class="positioning">
+
+ <div class="div_style">
+ <div class="wrapper">
+
+ <h1 class="title_class" id="title">Structure and function of a CPU (Central Processing Unit)</h1>
+ <p class="strapline"><b><i>The CPU is at the heart of a computer, the brain in which all operations take place.</i></b></p>
+ <img class="mainimg" src="assets/cpu-564771_640.jpg">
+
+ <h2 class="sub_title" id="sub1">Purpose of a CPU</h2>
+ 
+ <p class="content">A CPU consists of many individual components which all serve a specific purpose. When a programme is lauched, instructions are loaded into RAM (Random Access Memory) because this is significantly faster than traditional hard drives, and even SSDs.<br><br>
+ A CPU is there to execute the instructions which have been loaded; there are three basic operations which the CPU can perform:<br><br>
+   &nbsp;&nbsp;&bull; It can move data from one memory location to another<br>
+   &nbsp;&nbsp;&bull; It can perform simple mathematical operations (+-*/)<br>
+   &nbsp;&nbsp;&bull; It can evaluate conditions (><=)</p>
+ 
+    <h2 class="sub_title" id="sub2">Components in a CPU</h2>
+    <p class="content">A CPU consists of the following components:<br><br>
+    &nbsp;&nbsp;&bull; Control Unit (CU)<br>
+    &nbsp;&nbsp;&bull; Arithmetic Logic Unit (ALU)<br>
+    &nbsp;&nbsp;&bull; Clock<br>
+    &nbsp;&nbsp;&bull; Cache<br>
+    &nbsp;&nbsp;&bull; Registers<br>
+    &nbsp;&nbsp;&bull; Buses</p>
+
+    <h4 class="sub_title">Control Unit (CU)</h4>
+    <p class="content">The CU is the part of the CPU controls how data is transferred between RAM and the various components of the CPU. It also decodes the instructions and decides how to act on these instructions.</p>
+    <h4 class="sub_title">Arithmetic Logic Unit (ALU)</h4>
+    <p class="content">The ALU is the part of the CPU which carries out the arithmetic and logic (NOT, AND, OR) operations. The ALU recieves instructions from the CPU and loads one or more operands (data) out of registers in the CPU. The operation is performed on the operands and the result is output to a storage register. The ALU carries out multiplication and division operations by performing a series of addition, subtraction and shift operations. There may be multiple ALUs in a CPU, or the ALU may be split into the AU and the LU, of which there may also be multiple.</p>
+
+    <h4 class="sub_title">Clock</h4>
+    <p class="content">The clock is the pulse in a CPU which keeps all of the components is sync. It has a constant 'tick' which switches between 1 and 0. A clock cycle begins when the clock switches from 0 to 1. Clock speed is measured in hertz; for example, a 4 GHz clock speed or rate equates to about 4 billion cycles per second. The faster the clock speed, the faster a CPU can carry out instructions, however, the higher the clock speed, the more energy is used and the more heat is produced! However fast the clock speed is, performance is always limited be the slowest component (the bottleneck).</p>
+
+    <h4 class="sub_title">Buses</h4>
+    <p class="content">A bus is a set of parallel wires connecting two or more components in a computer.</p>
+    <p class="content"><b>Address Bus</b> - The address bus determines the location in memory that the processor will read data from or write data to. Each 'word' in memory has its own address, the address bus sends the memory address of the data which is to be written to or retrieved.</p>
+    <p class="content"><b>Data Bus</b> - The data bus contains the contents read from the memory location or which are to be written into the memory location. The data bus is bi-directional.</p>
+    <p class="content"><b>Control Bus</b> - The control bus communicates with the other components and devices. It carries commands from the CPU and returns status signals. It controls access to the address and data buses to avoid conflict. The control bus can send commands including: <i>Bus Request (indicates device requesting use of data bus), Bus Grant (grants use of data bus), Memory Write (causes data on data bus to be written to the memory location), Memory Read (causes data from the addressed location to be placed on the data bus), Interrupt Request, Clock (syncronises operations). </i></p>
+    <p class="content">When the CPU needs to access a memory location, the address is sent along the address bus, and the data returned along the data bus. The control signals are sent along the control bus.</p>
+    <h4 class="sub_title">Cache</h4>
+    <p class="content">CPU caches are small amounts of very high speed memory, which can be used to store instructions until they are needed, or frequently used instructions. The cache is useful because it significantly improves the performance of the CPU, as it spends less time sitting idle, waiting for the next data or instructions to arrive from the much slower RAM. CPUs generally have multiple 'levels' of cache. Level 1 is the fastest with the other levels slower. A CPU will search its caches for the next piece of data required; if successful, this is called a cache hit. Developers can significantly improve the performance of their code by ensuring it is properly optimised, so that the CPU is able to cache it more successfully.</p>
+
+    <h4 class="sub_title">Registers</h4>
+    <p class="content">The CPU contains many registers which temporarily store data or instructions until needed.</p>
+    <p class="content"><b>Program Counter (PC)</b> - The PC points to the next instruction to be executed. Once executed, it points to the next instruction.</p>
+    <p class="content"><b>Accumulator (ACC)</b> - This holds the data currently being processed by the CPU. Results of processes are also temporarily stored in the accumulator before being moved into memory.</p>
+    <p class="content"><b>Memory Address Register (MAR)</b> - Stores the address of the memory location which is currently in use, this can be either instructions or data. The MAR allows the CPU to communicate directly with the address bus (via buffer)</p>
+    <p class="content"><b>Memory Data Register (MDR)</b> - Stores data or instructions from RAM before used by CPU to be quickly accessed by when needed. It acts as a buffer between the CPU and memory.</p>
+    <p class="content"><b>Current Instruction Register (CIR)</b> - Stores the current instruction to be executed.</p>
+
+    <h2 class="sub_title" id="sub3">Architectures</h2>
+    <h4 class="sub_title">Von Neumann</h4>
+    <p class="content">This architecture was proposed by John von Neumann. It uses the stored program concept; instructions are fetched and executed one by one by a processor. In the von Neumann architecture, the same data bus is used to transfer data and instructions and the same address bus is used to transfer the address of both instructions and data. This means that only one thing can be done at a time, which causes the von Neumann bottlenck.</p>
+    <h4 class="sub_title">Harvard</h4>
+    <p class="content">Used in Digital Signal Processing including audio and speech signal processing, sonar and radar signal processing. The Harvard architecture has distinct sets of address and data buses for instructions and data, thus mitigating the von Neumann bottleneck.</p>
+
+
+
+  </div>
+  </div>
+  </div>
+  </div>
+</body>
+</html>
